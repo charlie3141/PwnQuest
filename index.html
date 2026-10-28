@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="PwnQuest — game web tương tác dạy buffer overflow, canary, format string và ROP từ con số 0. 8 level, 100% vanilla JS, chạy ngay trong trình duyệt.">
+  <title>PwnQuest — Học pwn từ con số 0</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230a0e14'/%3E%3Ctext x='16' y='23' font-size='18' text-anchor='middle' fill='%237ee787' font-family='monospace'%3E%26%23x2620%3B%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand"><span class="brand-icon">☠</span> PwnQuest</div>
+    <nav id="level-nav" class="level-nav" aria-label="Chọn level"></nav>
+    <div class="topbar-right">
+      <div id="progress" class="progress" title="Số level đã hoàn thành"></div>
+      <button id="reset-btn" class="btn btn-ghost btn-sm" title="Xoá toàn bộ tiến độ">↺ Reset</button>
+    </div>
+  </header>
+
+  <main id="app" class="app">
+    <div id="level-header" class="level-header"></div>
+    <div id="tabs" class="tabs" role="tablist"></div>
+    <div id="panels" class="panels">
+      <section id="panel-theory"    class="panel" role="tabpanel"></section>
+      <section id="panel-demo"      class="panel" role="tabpanel"></section>
+      <section id="panel-challenge" class="panel" role="tabpanel"></section>
+      <section id="panel-solution"  class="panel" role="tabpanel"></section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    PwnQuest — game học buffer overflow cho người mới bắt đầu. 100% HTML/CSS/JS, tiến độ lưu trong localStorage.
+  </footer>
+
+  <script src="js/engine.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/levels/level0.js"></script>
+  <script src="js/levels/level1.js"></script>
+  <script src="js/levels/level2.js"></script>
+  <script src="js/levels/level3.js"></script>
+  <script src="js/levels/level4.js"></script>
+  <script src="js/levels/level5.js"></script>
+  <script src="js/levels/level6.js"></script>
+  <script src="js/levels/level7.js"></script>
+  <script src="js/levels/index.js"></script>
+</body>
+</html>
